@@ -1,0 +1,273 @@
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ html{
+    background-color: var(--cor3);
+    font-size: 62.5%;
+ }
+
+ body{
+    overflow-x: hidden;
+ }
+ 
+:root{
+    --cor1 : #00ff7f;
+    --cor2 : #00ff88; 
+    --cor3 : #1c1c1c;
+
+}
+
+
+
+
+.content-title > h1{
+    color: white;
+}
+
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-title{
+
+    font-size: 4rem;
+    display: flex;
+    margin-top: 7rem;
+
+}
+
+
+
+
+.content-add > button:hover{
+    background-color: #1a1a1a;
+}
+
+
+.content-row{
+    border: 1px solid var(--cor1);
+    margin: 4rem 6rem 4rem 6rem; 
+    width: 90%;
+    min-width: 90%;
+
+}
+
+.number{
+    font-size: 15rem;
+    color: white;
+    grid-area: nu;
+}
+
+.image{
+    grid-area: im;
+}
+
+.image > img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-name{
+    color: white;
+    font-size: 1.5rem;
+    grid-area: can;
+}
+
+.card-date{
+    color:gray;
+    font-size: 2rem;
+    grid-area: cd;
+}
+
+.card-avaliation-people{
+    color:gray;
+    font-size: 2rem;
+    grid-area: cap;
+}
+
+.card-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: cn;
+}
+
+.card-note > img{
+    width: 35%;
+}
+
+.card-note > p{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.card-assessment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: ca;
+}
+
+.card-assessment > p{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.card-assessment > p::before{
+    content: 'R$';
+    color: #00ff7f;
+    margin-right: .5rem;
+}
+
+.card-btn{
+grid-area: cbtn;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card-btn button{
+    border: 1px solid var(--cor1);
+    padding: 1rem;
+    background: none;
+    color: var(--cor1);
+    border-radius: 5px;
+    width: 40%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.card-btn button:hover{
+    background-color: #333333;
+}
+
+.card-content{
+  
+    display: grid;
+    grid-template-columns: 4% 8% 20% 25% 8% 10% 10%;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 2rem;
+    grid-template-areas:
+      ". nu im can cn ca cbtn"
+      ". nu im cd cn ca cbtn"
+      ". nu im cap cn ca cbtn";
+}
+
+
+
+
+
+.align {
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.direct-paginas {
+    display: flex;
+    background-color: rgb(22, 21, 21);
+    border: 0.1rem solid rgba(255, 255, 255, 0.13);
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+}
+
+.direct-paginas a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.2rem;
+    margin-left: 2.5rem;
+    font-family: 'Source Code Pro', monospace;
+    transition: all .2s ease-in-out;
+}
+
+.direct-paginas span {
+    font-size: 2.2rem;
+    color: #00ff80;
+}
+
+#p1:hover {
+    color: #00ff80;
+}
+
+#p2:hover {
+    color: #00ff80;
+}
+
+#p3:hover {
+    color: #00ff80;
+}
+
+#p4:hover {
+    color: #00ff80;
+}
+
+#p5:hover {
+    color: #00ff80;
+}
+
+#p6:hover {
+    color: #00ff80;
+}
+
+#p7:hover {
+    color: #00ff80;
+}
+
+#p8:hover {
+    color: #00ff80;
+}
+
+#p9:hover {
+    color: #00ff80;
+}
+
+#p10 {
+    margin-right: 2.5rem;
+}
+
+#p10:hover {
+    color: #00ff80;
+}
+
+@media screen and (max-width: 1200px) {
+  html{
+    font-size: 50%;
+  }
+
+  .card-btn button{
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 40%;
+    }
+.card-btn button{
+    width: 60%;
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+    html{
+        font-size: 25%;
+    }
+
+ 
+    
+    }
+    
