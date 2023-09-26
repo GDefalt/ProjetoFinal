@@ -62,14 +62,17 @@
     font-size: 15rem;
     color: white;
     grid-area: nu;
+    border-right: .3rem solid #00ff7f;
+  
 }
 
 .image{
     grid-area: im;
+    width: 100%;
 }
 
 .image > img{
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -141,6 +144,7 @@ align-items: center;
     width: 40%;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    font-size: 1rem;
 }
 
 .card-btn button:hover{
@@ -249,6 +253,10 @@ align-items: center;
     width: 50%;
   }
 
+  .number{
+    font-size: 13rem;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -259,6 +267,9 @@ align-items: center;
     width: 60%;
     font-size: 1rem;
   }
+.number{
+    font-size: 12rem;
+  }
 
 }
 
@@ -267,7 +278,9 @@ align-items: center;
         font-size: 25%;
     }
 
- 
+ .number{
+    font-size: 10rem;
+  }
     
     }
     
