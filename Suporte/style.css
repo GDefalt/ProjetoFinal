@@ -83,12 +83,13 @@
 .central-perguntas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-auto-rows: auto;
   grid-template-areas:
     "titulo titulo titulo"
     "catalogo perfil avaliacao"
-    "comentarios ranking login";
+    "comentarios ranking login"
+    "compra  reembolso ofertas";
   grid-gap: 1rem;
   margin-bottom: 4rem;
 }
@@ -172,6 +173,17 @@
   grid-area: login;
 }
 
+#t7{
+  grid-area: compra;
+}
+
+#t8{
+  grid-area: reembolso;
+}
+
+#t9{
+  grid-area: ofertas;
+}
 .linha2 {
   height: 0.1rem;
   background-color: #00ff88;
